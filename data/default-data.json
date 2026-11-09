@@ -1,0 +1,177 @@
+{
+  "users": [
+    {
+      "id": "u_admin",
+      "name": "ผู้ดูแลระบบ (Admin)",
+      "phone": "0891234567",
+      "email": "admin@queue.com",
+      "password": "password123",
+      "role": "admin",
+      "createdAt": "2026-01-01T08:00:00.000Z"
+    },
+    {
+      "id": "u_demo",
+      "name": "สมชาย ใจดี",
+      "phone": "0812345678",
+      "email": "user@queue.com",
+      "password": "password123",
+      "role": "user",
+      "createdAt": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "id": "u_demo2",
+      "name": "สมศรี รักสงบ",
+      "phone": "0898765432",
+      "email": "somsri@example.com",
+      "password": "password123",
+      "role": "user",
+      "createdAt": "2026-02-15T10:30:00.000Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "srv_1",
+      "name": "ยื่นเอกสารและงานทะเบียน",
+      "codePrefix": "A",
+      "durationMinutes": 15,
+      "maxPerSlot": 3,
+      "description": "บริการจัดทำเอกสาร ทำบัตร ย้ายทะเบียน และรับรองเอกสารทั่วไป",
+      "icon": "file-text",
+      "active": true
+    },
+    {
+      "id": "srv_2",
+      "name": "ปรึกษาผู้เชี่ยวชาญและให้คำแนะนำ",
+      "codePrefix": "B",
+      "durationMinutes": 30,
+      "maxPerSlot": 2,
+      "description": "ให้คำปรึกษาเฉพาะทาง ตรวจสอบข้อมูลเชิงลึก และวางแผนดำเนินการ",
+      "icon": "user-check",
+      "active": true
+    },
+    {
+      "id": "srv_3",
+      "name": "ชำระค่าธรรมเนียมและการเงิน",
+      "codePrefix": "C",
+      "durationMinutes": 10,
+      "maxPerSlot": 4,
+      "description": "ชำระค่าบริการ ค่าธรรมเนียม ออกใบเสร็จรับเงิน และรับเงินคืน",
+      "icon": "credit-card",
+      "active": true
+    },
+    {
+      "id": "srv_4",
+      "name": "ตรวจสอบสิทธิและสวัสดิการ",
+      "codePrefix": "D",
+      "durationMinutes": 20,
+      "maxPerSlot": 3,
+      "description": "ลงทะเบียนรับสิทธิ ตรวจสอบเงื่อนไข และยื่นคำร้องสวัสดิการ",
+      "icon": "shield-check",
+      "active": true
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bk_001",
+      "queueNumber": "A001",
+      "userId": "u_demo2",
+      "customerName": "สมศรี รักสงบ",
+      "customerPhone": "0898765432",
+      "customerEmail": "somsri@example.com",
+      "serviceId": "srv_1",
+      "date": "TODAY_DATE",
+      "timeSlot": "09:00 - 09:30",
+      "note": "ติดต่อทำเรื่องต่ออายุเอกสารประจำปี",
+      "status": "completed",
+      "counterNumber": 1,
+      "calledAt": "TODAY_TIME_1",
+      "completedAt": "TODAY_TIME_2",
+      "createdAt": "TODAY_TIME_0"
+    },
+    {
+      "id": "bk_002",
+      "queueNumber": "A002",
+      "userId": "u_demo",
+      "customerName": "สมชาย ใจดี",
+      "customerPhone": "0812345678",
+      "customerEmail": "user@queue.com",
+      "serviceId": "srv_1",
+      "date": "TODAY_DATE",
+      "timeSlot": "09:30 - 10:00",
+      "note": "ขอคัดสำเนาเอกสารและรับรองความถูกต้อง",
+      "status": "in_service",
+      "counterNumber": 1,
+      "calledAt": "TODAY_TIME_3",
+      "completedAt": null,
+      "createdAt": "TODAY_TIME_0"
+    },
+    {
+      "id": "bk_003",
+      "queueNumber": "B001",
+      "userId": "u_guest1",
+      "customerName": "วิภาดา สดใส",
+      "customerPhone": "0855551234",
+      "customerEmail": "vipada@example.com",
+      "serviceId": "srv_2",
+      "date": "TODAY_DATE",
+      "timeSlot": "10:00 - 10:30",
+      "note": "นัดพบเจ้าหน้าที่ฝ่ายสิทธิประโยชน์",
+      "status": "in_service",
+      "counterNumber": 2,
+      "calledAt": "TODAY_TIME_4",
+      "completedAt": null,
+      "createdAt": "TODAY_TIME_0"
+    },
+    {
+      "id": "bk_004",
+      "queueNumber": "A003",
+      "userId": "u_guest2",
+      "customerName": "กิตติพงษ์ มั่นคง",
+      "customerPhone": "0861112233",
+      "customerEmail": "kittipong@example.com",
+      "serviceId": "srv_1",
+      "date": "TODAY_DATE",
+      "timeSlot": "10:30 - 11:00",
+      "note": "สอบถามขั้นตอนการโอนสิทธิ",
+      "status": "waiting",
+      "counterNumber": null,
+      "calledAt": null,
+      "completedAt": null,
+      "createdAt": "TODAY_TIME_0"
+    },
+    {
+      "id": "bk_005",
+      "queueNumber": "C001",
+      "userId": "u_guest3",
+      "customerName": "นภัสวรรณ รุ่งเรือง",
+      "customerPhone": "0879998877",
+      "customerEmail": "napassawan@example.com",
+      "serviceId": "srv_3",
+      "date": "TODAY_DATE",
+      "timeSlot": "10:30 - 11:00",
+      "note": "ชำระค่าธรรมเนียมใบอนุญาต",
+      "status": "waiting",
+      "counterNumber": null,
+      "calledAt": null,
+      "completedAt": null,
+      "createdAt": "TODAY_TIME_0"
+    },
+    {
+      "id": "bk_006",
+      "queueNumber": "B002",
+      "userId": "u_guest4",
+      "customerName": "ธนกร ยิ่งยง",
+      "customerPhone": "0823334455",
+      "customerEmail": "thanakorn@example.com",
+      "serviceId": "srv_2",
+      "date": "TODAY_DATE",
+      "timeSlot": "11:00 - 11:30",
+      "note": "ปรึกษาขั้นตอนการขออนุมัติโครงการ",
+      "status": "waiting",
+      "counterNumber": null,
+      "calledAt": null,
+      "completedAt": null,
+      "createdAt": "TODAY_TIME_0"
+    }
+  ]
+}

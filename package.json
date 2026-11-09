@@ -1,0 +1,20 @@
+{
+  "name": "smartqueue-online-booking-system",
+  "version": "1.0.0",
+  "description": "ระบบจองคิวออนไลน์ (Online Queue Booking System) สไตล์ Modern Minimal ด้วย Node.js และ HTML5/CSS3/JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "queue",
+    "booking",
+    "thai",
+    "smartqueue",
+    "reservation",
+    "queue-management"
+  ],
+  "author": "SmartQueue Team",
+  "license": "MIT"
+}
